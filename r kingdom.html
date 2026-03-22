@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lelouch Shop</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #0a0a0a 0%, #1a001a 70%, #2a0000 100%);
+      color: white;
+    }
+
+    header {
+      background: linear-gradient(90deg, #000000, #4b0082);
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: #bb86fc;
+      text-shadow: 0 0 8px #bb86fc, 0 0 16px #bb86fc55, 0 0 24px #bb86fc33;
+      letter-spacing: 2px;
+    }
+
+    header a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: #111;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px #bb86fc55;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px #bb86fc;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      color: #bb86fc;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      background: #4b0082;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+
+    .buy-btn:hover {
+      background: #bb86fc;
+    }
+
+    .bottom-image {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .bottom-image img {
+      width: 100%;
+      max-width: 860px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 40px #bb86fc;
+    }
+
+    .video-example {
+      margin-top: 15px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      cursor: pointer;
+    }
+
+    .visit-site-btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: #bb86fc;
+      color: #0a0a0a;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .visit-site-btn:hover {
+      background: #4b0082;
+      color: white;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="https://RiinoShop" target="_blank">RIINO SHOP</a>
+</header>
+
+<section class="products">
+
+  <!-- Edit Simple -->
+  <div class="card">
+    <img src="https://i.pinimg.com/originals/6e/4f/5a/6e4f5a6fcb3b88a4c6e3b2a8d6d4f7c5.jpg" alt="">
+    <h3>Edit Simple</h3>
+    <div class="price">5€</div>
+
+    <div class="video-example">
+      <a href="https://youtube.com/shorts/_F565kifFtM" target="_blank">
+        <img src="https://img.youtube.com/vi/_F565kifFtM/hqdefault.jpg" alt="Aperçu Edit Simple" style="width:100%; border-radius:10px;">
+      </a>
+    </div>
+
+    <a href="https://RiinoShop" target="_blank" class="buy-btn">Acheter</a>
+  </div>
+
+  <!-- Hard Edit -->
+  <div class="card">
+    <img src="https://i.pinimg.com/originals/9c/3d/0c/9c3d0c8c8c3b6f1c6a5c1e5d7f3c8a1b.jpg" alt="">
+    <h3>Hard Edit</h3>
+    <div class="price">10€</div>
+
+    <div class="video-example">
+      <a href="https://youtube.com/shorts/eII9an8JxEc" target="_blank">
+        <img src="https://img.youtube.com/vi/eII9an8JxEc/hqdefault.jpg" alt="Aperçu Hard Edit" style="width:100%; border-radius:10px;">
+      </a>
+    </div>
+
+    <a href="https://RiinoShop" target="_blank" class="buy-btn">Acheter</a>
+  </div>
+
+  <!-- Hardcore Edit -->
+  <div class="card">
+    <img src="https://i.pinimg.com/originals/4b/7e/1a/4b7e1a9f8c2e9f8c4b2a1c5d7e3f6a1b.jpg" alt="">
+    <h3>Hardcore Edit</h3>
+    <div class="price">15€</div>
+
+    <div class="video-example">
+      <a href="https://youtube.com/shorts/YOLOmi9mDYM" target="_blank">
+        <img src="https://img.youtube.com/vi/YOLOmi9mDYM/hqdefault.jpg" alt="Aperçu Hardcore Edit" style="width:100%; border-radius:10px;">
+      </a>
+    </div>
+
+    <a href="https://RiinoShop" target="_blank" class="buy-btn">Acheter</a>
+  </div>
+
+</section>
+
+<!-- Bannière en bas avec bouton vers le site -->
+<div class="bottom-image">
+  <img src="https://imgs.search.brave.com/VhOMSPjpT8p1U3gx11wRV1yUpl4S5AQdwdchr0NlIbo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDI4ODM1/MDQuanBn" alt="">
+  <br>
+  <a href="https://RiinoShop" target="_blank" class="visit-site-btn">Visitez le site RIINO SHOP</a>
+</div>
+
+</body>
+</html>
